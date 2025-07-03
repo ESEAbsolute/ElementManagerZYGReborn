@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "elemanager",
+  "version": "${version}",
+
+  "name": "Element Manager ZYG",
+  "description": "添加自动存储元素和元宝，以及自动管理背包元素储量的功能。适配朱音阁服务器。",
+  "authors": [
+    "CivilightEterna"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/elemanager/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.eseabsolute.elementmanagerzygreborn.ElementManagerZYGReborn"
+    ],
+    "client": [
+      "com.eseabsolute.elementmanagerzygreborn.ElementManagerZYGRebornClient"
+    ]
+  },
+  "mixins": [
+    "elementmanagerzygreborn.client.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "fabric-api": "*",
+    "minecraft": "~1.20.1",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
